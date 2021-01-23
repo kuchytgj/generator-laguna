@@ -63,7 +63,7 @@ VAR SAFE_Z_HEIGHT = [SAFEZ|A|Z|1.3]
 
 begin HEADER
 "(Filename:  [TP_FILENAME])"
-"[N] G17 G40 G90"
+"[N] G17 G40 G49 G80 G90"
 "[N] G21"
 "[N] M03 [S]"
 +"[N] [XH] [YH] [F]"
