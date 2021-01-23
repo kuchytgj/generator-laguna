@@ -142,6 +142,7 @@ begin NEW_SEGMENT
 
 begin TOOLCHANGE
 
+"[N] G00 [SAFEZ]"
 "[N] M5"
 "[N] M6 [T]"
 
