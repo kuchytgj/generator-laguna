@@ -69,7 +69,7 @@ begin HEADER
 "(X=[XLENGTH], Y=[YLENGTH], Z=[ZLENGTH])"
 "[N] G17 G40 G49 G80 G90"
 "[N] G21"
-"[N] M06 T[T]
+"[N] M06 T[T]"
 "[N] M03 [S]"
 +"[N] [XH] [YH] [F]"
 
