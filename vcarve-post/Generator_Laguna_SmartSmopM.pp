@@ -11,6 +11,7 @@
 + Tony     15/11/2005 Written for metric
 + Mark 	   07/11/2013 Modified for Cut3D
 + GregK    01/23/2021 Modified for Generator
++ GregK    01/20/2022 Fix various issues
 +================================================
 
 POST_NAME = "Laguna SmartShopM ATC - metric"
@@ -63,8 +64,12 @@ VAR SAFE_Z_HEIGHT = [SAFEZ|A|Z|1.3]
 
 begin HEADER
 "(Filename:  [TP_FILENAME])"
+"(Machine: Laguna SmartShop M)"
+"( Material Size)"
+"(X=[XLENGTH], Y=[YLENGTH], Z=[ZLENGTH])"
 "[N] G17 G40 G49 G80 G90"
 "[N] G21"
+"[N] M06 T[T]
 "[N] M03 [S]"
 +"[N] [XH] [YH] [F]"
 
@@ -144,7 +149,7 @@ begin TOOLCHANGE
 
 "[N] G00 [SAFEZ]"
 "[N] M5"
-"[N] M6 [T]"
+"[N] M6 T[T]"
 
 +---------------------------------------------------
 +  Commands output at the end of the file
