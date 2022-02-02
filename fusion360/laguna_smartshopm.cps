@@ -1651,8 +1651,9 @@ function onClose() {
   optionalSection = false;
 
   writeRetract(Z);
-  writeRetract(X, "M5");
-  writeRetract(Y);
+  writeBlock(mFormat.format(5));
+  //writeRetract(X, "M5");
+  //writeRetract(Y);
   onImpliedCommand(COMMAND_END);
   onImpliedCommand(COMMAND_STOP_SPINDLE);
   writeBlock(mFormat.format(30)); // stop program, spindle stop, coolant off
